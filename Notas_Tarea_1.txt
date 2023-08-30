@@ -1,0 +1,64 @@
+
+
+
+Contexto del negocio
+Caso de estudio 1:
+Dentro del uso de plataformas virtuales de ventas (Market Places), se presentan novedades como devoluciones por insatisfaccion de clientes o averías en productos por afectación durante el transporte hacia el destino, es por esto que puede ser necesario poder identificar las características que lleven a que un producto pueda ser devuelto y así poder tanto maximizar las satisfaccion del cliente como la confianza con los proveedores de servicios de transporte y logistica encargados de las entregas de productos pequeños para estas plataformas de ventas y asi poder identificar el comportamiento de distribuidores (Vendedores) y proveedores de servicios de logistica y transporte.
+
+Caso de estudio 2:
+En establecimientos que cuentan con parqueaderos privados al aire libre en donde implementar camaras unicas de deteccion de parqueadero es altamente costoso,pero cuentan con camaras de vigilancia que registran seguridad en estos mismos establecimientos, usar estas mismas camaras para poder determinar la dispobilidad (con una inversion baja adicional) de parqueadero bajo condiciones de lluvia, sol(sombras), nublado, despejado en horarios pico, es relevante poder dar informacion a usuarios finales si encontraran un espacio de parqueo disponible en las secciones en donde se encuetran.
+ 
+Se refiere al entorno en el cual se lleva a cabo el proyecto. Esto incluye la industria, sector o área de operación de la organización, así como los desafíos, tendencias y oportunidades relevantes. También implica comprender las necesidades de los clientes, la competencia, regulaciones y factores que influyen en el proyecto. Este contexto guía la aplicación de técnicas de ciencia de datos para abordar de manera efectiva los objetivos y desafíos específicos de la organización en ese entorno.
+
+Pregunta SMART
+Caso de estudio 1:
+¿Cual es la probabilidad de que en el ultimo trimestre del año, un producto sea devuelto por averías o insatisfaccion del usuarios final dada la calidad de los envios producto de daños durante el transporte a distribuidores (Vendedore) de productos pequeños que usan plataformas virtuales (Market Places)?
+
+Specific  : Productos pequeños devueltos por aveias o daños en el transporte en el ultimo trimestre del año
+Measurable  : Probabilidad de devolucion de un producto enviado con un proveedor de logistica y transporte
+Action Oriented: Cambio de proveedores de logistica y transporte.
+Relevant : Devoluciones de productos basado en las caracteristicas de los proveedores de transporte y logistica.
+Time-Bound : Ultimo trimestre del año.
+
+Caso de estudio 2:
+Determinar la cantidad de espacios de parqueo vacios en hora pico con condiciones climaticas adversas para parqueaderos privados al aire libre.
+
+Specific : Parqueadero al aire libre en hora pico con condiciones climaticas adversas (Lluvia, Sol, Nublado, Despejado)
+Measurable: Cantidad de parqueaderos disponibles
+Action Oriented: Notificar dispobilidad antes del ingreso a usuarios de parqueaderos privados, bajo condiciones climaticas adversas.
+Relevant : Optimizar el uso de parqueaderos y minimizar el tiempo de busqueda de los mismos en condiciones climaticas adversas.
+Time-Bound : Horas pico (07:00-08:00, 10:00-11:00, 12:00-13:00, 17:00-18:00, 21:00-22:00)
+
+Data Collection
+
+Caso de estudio 1:
+La fuente de información de la historia de ventas y devoluciones de market place para distribuidores (Vendedores) , encuentas a usuarios finales que alguna vez devolvieron algun producto o pensaron en devolver algun producto por daños o calidad en el producto como efecto de el envio.
+
+Caso de estudio 2:
+La fuente de informacion podria ser historia de videos de camaras de vigilancia en horarios pico con condiciones climaticas adversas que permitan identificar si un vehiculo se encuentra parqueado en un sitio al aire libre.
+ 
+
+Problemas de Inteligencia artificial
+Caso de estudio 1:
+Poder indentificar las caracteristicas del proveedor de logistica y transporte como rutas, tiempos, entre otras. que permitan agruparlos y asi poder identificar si los productos a llevar podrían ser devueltos por averías o calidad de los productos enviados.
+
+·         Agrupamiento (Clustering): En este caso, los datos se dividen en grupos o clústeres similares según sus características, sin etiquetas predefinidas. Por ejemplo, segmentar proveedores de logistica y transporte en grupos según caracteristicas de envio.
+
+
+Caso de estudio 2:
+Teniendo en cuenta la entropía en el procesamiento digital de imagenes poder identificar en diferentes horarios picos, bajo diferentes condiciones climaticas adversas (Sol, lluvia, nublado, despejado) usando las camaras de vigilancia de parqueaderos privados.
+
+·         Visión por Computadora: Aquí se trabajan problemas relacionados con la interpretación y análisis de imágenes y videos, como reconocimiento facial, detección de objetos y seguimiento de movimiento.
+
+
+
+
+--------------------------------------------------------------------------------------------
+¿Dónde se recolecta la información ?: Plataforma de reporte de materialización de riesgos operativos para cada oficina.
+
+SMART
+Specific : Riesgo operativo en transacciones bancarias en caja
+Measurable: Valor promedio 
+Action-Bound:  Mitigación y control de riesgo operativo para transacciones.
+Relevant: Perdidas operativas
+Time-bound: Mensuales
