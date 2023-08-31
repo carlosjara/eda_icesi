@@ -61,3 +61,11 @@ Measurable: Valor promedio
 Action-Bound:  Mitigación y control de riesgo operativo para transacciones.
 Relevant: Perdidas operativas
 Time-bound: Mensuales
+
+
+https://datascience.stackexchange.com/questions/55663/one-feature-several-units
+
+OSCAR HERNAN	ESTRADA VARGAS
+CAMILO	ESTUPIÑAN OROZCO
+YASMIN	GARCIA GAVIRIA
+CARLOS ENRIQUE	JARAMILLO AROS
