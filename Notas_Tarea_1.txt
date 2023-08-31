@@ -1,6 +1,5 @@
 
 
-
 Contexto del negocio
 Caso de estudio 1:
 Dentro del uso de plataformas virtuales de ventas (Market Places), se presentan novedades como devoluciones por insatisfaccion de clientes o averías en productos por afectación durante el transporte hacia el destino, es por esto que puede ser necesario poder identificar las características que lleven a que un producto pueda ser devuelto y así poder tanto maximizar las satisfaccion del cliente como la confianza con los proveedores de servicios de transporte y logistica encargados de las entregas de productos pequeños para estas plataformas de ventas y asi poder identificar el comportamiento de distribuidores (Vendedores) y proveedores de servicios de logistica y transporte.
