@@ -1,0 +1,15 @@
+Datasets para el trabajo final
+Costos de devoluciones de envios en estados unidos 2017 - 2020
+https://www.statista.com/statistics/871365/reverse-logistics-cost-united-states/
+
+Deteccion de parqueadero en dia y noche
+https://zenodo.org/record/6560823
+
+Action_camera Parking
+https://paperswithcode.com/dataset/action-camera-parking
+--https://github.com/martin-marek/parking-space-occupancy
+
+
+Disponiblidad de parqueaderos en Birmingham
+https://archive.ics.uci.edu/dataset/482/parking+birmingham
+

@@ -1,0 +1,81 @@
+
+--Como cargar Dataset desde google Drive a Google Colab
+from google.colab import drive
+drive.mount('/gdrive')
+df =pd.read_csv("/gdrive/MyDrive/Colab Notebooks/Dataset/diabetes-NAN.csv")
+df.head()
+
+--Error unicode utf-8
+other_path = "https://raw.githubusercontent.com/carlosjara/eda_icesi/main/Notebooks/DataSet/SABERTYT20162.csv"
+df = pd.read_csv(other_path,encoding = 'latin',delimiter=';',na_values=' ')
+--UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 2306: invalid continuation byte
+<!-- Comentario:
+Ruta: gdrive/MyDrive/<Folder>/<SubFolder>/<csvFile>
+-->
+
+
+--Cargar CSV 
+other_path = "data/parking.csv"
+df = pd.read_csv(other_path)
+
+
+#Librerias para cargar al iniciar
+import seaborn as sns
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+---Citar la fuente de un dataset
+Stolfi,Daniel. (2019). Parking Birmingham. UCI Machine Learning Repository. https://doi.org/10.24432/C51K5Z.
+
+@misc{misc_parking_birmingham_482,
+  author       = {Stolfi,Daniel},
+  title        = {{Parking Birmingham}},
+  year         = {2019},
+  howpublished = {UCI Machine Learning Repository},
+  note         = {{DOI}: https://doi.org/10.24432/C51K5Z}
+}
+
+
+-- Citas proyecto de Analisis Exploratorio
+@inproceedings{Ciampi_visapp_2021,
+    doi = {10.5220/0010303401850195},
+    url = {https://doi.org/10.5220%2F0010303401850195},
+    year = 2021,
+    publisher = {{SCITEPRESS} - Science and Technology Publications},
+    author = {Luca Ciampi and Carlos Santiago and Joao Costeira and Claudio Gennaro and Giuseppe Amato},
+    title = {Domain Adaptation for Traffic Density Estimation},
+    booktitle = {Proceedings of the 16th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications}
+}
+
+@dataset{ciampi_ndispark_6560823,
+    author = {Luca Ciampi and Carlos Santiago and Joao Costeira and Claudio Gennaro and Giuseppe Amato},
+    title = {{Night and Day Instance Segmented Park (NDISPark) Dataset: a Collection of Images taken by Day and by Night for Vehicle Detection, Segmentation and Counting in Parking Areas}},
+    month = may,
+    year = 2022,
+    publisher = {Zenodo},
+    version = {1.0.0},
+    doi = {10.5281/zenodo.6560823},
+    url = {https://doi.org/10.5281/zenodo.6560823}
+}
+
+--Crear listado de valores string
+headers = ["factor-riesgo","perdida-promedio-anual","fabricante","tipo-combustible","aspiracion", "num-puertas","estilo-carroceria",
+         "traccion","ubicacion-motor","distancia-entre-ejes", "longitud","anchura","altura","peso-vacio","tipo-motor",
+         "num-cilindros", "tamano-motor","sistema-combustible","calibre","carrera","relacion-compresion","caballos-fuerza",
+         "pico-rpm","millas_por_galon_ciudad","millas_por_galon_carretera","precio"]
+##SystemCodeNumber,Capacity,Occupancy,LastUpdated         
+headers = ['ID_Parqueadero','Capacidad','Ocupados','UltimaActualizacion']
+
+
+-- Reemplazar nombres de encabezados de columnas
+df.columns = headers
+df.head(10)
+
+--Guardar archivo como csv
+from google.colab import files
+df.to_csv("automobile.csv", index=False)
+files.download("automobile.csv")
+
+##Establecer fondo de graficas con sns
+sns.set_theme(style="whitegrid")
